@@ -1,9 +1,378 @@
-/* Add styling for your page here */
-
 .App {
+    text-align: center;
+    font-family: 'Recursive', monospace;
+    --mono: "MONO" 0;
+  
+    /* Monospace: Sans (natural-width) or Mono (fixed-width) */
+    --casl: "CASL" 1;
+    
+    /* Casual: Linear to Casual */
+    --wght: "wght" 800;
+    
+    /* Weight: Light to ExtraBlack; usually set with `font-weight` */
+    --slnt: "slnt" 0;
+    
+    /* Slant: 0 to -15 degrees, auto cursive at -14 */
+    --CRSV: "CRSV" 0.5;
+    
+    /* Cursive: always roman, auto substitution, or always cursive */
+    font-variation-settings: var(--mono), var(--casl), var(--wght), var(--slnt), var(--CRSV);
+
+    color: #cad2c5;
+
+    display:block;
+
+  }
+  
+#game{
+  /* animation: fly_up .6s cubic-bezier(.73,-0.02,1,.55) backwards; */
+  /* animation-delay: 1.3s; */
+}
+
+@keyframes fly_up {
+  from {
+    transform: translateY(300%);
+  }
+  to {
+    transform: translateY(0);
+  }
+
+  
+
+}
+  .question {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .question button {
+    max-width: 600px;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .question button.selected {
+    background-color: tomato;
+  }
+
+  .question button:hover{
+    filter: brightness(120%);
+  }
+  
+  .navigation-buttons {
+    margin: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .navigation-buttons button {
+    margin: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:rgba(255, 255, 255, 0.1);
+    font-family: 'Recursive', monospace;
+    justify-items: center;
+  }
+
+  
+
+  
+  .sort-select {
+    background-color: #ff6347; /* Same background color for consistency */
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    background-color: #9797974a;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #fff; /* White text for contrast */
+    font-size: 14px; /* Smaller font size */
+    padding: 8px 16px; /* Smaller padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* No underline */
+    margin-top: 10px; /* Space above the button */
+    opacity: 0.8; /* Slightly reduced opacity */
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+    font-family: 'Recursive', monospace;
+  }
+  
+  .sort-select:hover {
+    outline: none;
+    filter: brightness(140%)
+   
+  }
+  
+  .sort-select option {
+    background-color: white;
+    color: black;
+  }
+  
+  .sort-select::after {
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  
+  .arrow {
+    width: 30px;
+    background-color:#30303000;
+    color:white;
+    display: flex;
+    justify-items: left;
+    padding: 0;
+  }
+  
+  .arrow:hover {
+    background-color:#30303000;
+    color:tomato;
+  }
+
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #d79090;
+}
+
+.statistics {
+  margin: 0vw 10vw 2vw 10vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: initial;
 
 }
 
-.BakeryItem {
+/* .stat {
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+} */
+
   
+  /* .statistics {
+    margin: 2vw 10vw 2vw 10vw;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: initial;
+    
+  } */
+  
+  .stat {
+    margin-bottom: 20px;
+    width: 24vw;
+    /* width: 100%;
+    height: 10vh;
+    padding: 1vw; */
+    /* flex: 1;
+    margin: 10px; Add margin between charts */
+  }
+
+  
+  .grow {
+    margin: 6vh 20vw 10vh 16vw;
+  }
+/* 
+  .grow img{
+    transition: .5s ease;
+    }
+
+    .grow img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94)s ease;
+    } */
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100..900&display=swap');
+
+body {
+  font-family: 'Recursive', monospace;
+  font-family: 'Recursive', monospace;
+  --mono: "MONO" 0;
+
+  /* Monospace: Sans (natural-width) or Mono (fixed-width) */
+  --casl: "CASL" 1;
+  
+  /* Casual: Linear to Casual */
+  --wght: "wght" 800;
+  
+  /* Weight: Light to ExtraBlack; usually set with `font-weight` */
+  --slnt: "slnt" 0;
+  
+  /* Slant: 0 to -15 degrees, auto cursive at -14 */
+  --CRSV: "CRSV" 0.5;
+  
+  /* Cursive: always roman, auto substitution, or always cursive */
+  font-variation-settings: var(--mono), var(--casl), var(--wght), var(--slnt), var(--CRSV);
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-variation-settings: 'wght' 700;
+  color: white;
+}
+
+p {
+  font-variation-settings: 'wght' 400;
+}
+
+button {
+  font-family: 'Recursive', monospace;
+
+  background-color: #36a2eb; /* Blue */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+#title {
+    font-family: "cafeteria", sans-serif;
+    font-weight: 600;
+            
+    /* font-variation-settings: 'MONO' 0, 'CASL' 0, 'wght' 800, 'slnt' 0, 'CRSV' 0.5; */
+    transition: color 0.5s, font-variation-settings 0.5s, 
+  }
+  
+  #title:hover {
+    font-variation-settings: 'MONO' 0, 'CASL' 1, 'wght' 800, 'slnt' 0, 'CRSV' 0.5;
+    color: #36a2eb;
+  }
+  
+
+#questionWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* LoadingAnimation.css */
+body, html {
+    /* margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; */
+    /* background-color: #323232; */
+    background-color: #1f1f1f;
+  }
+  
+  #loading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  #piecharticon{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    /* animation: fly_in .3s cubic-bezier(.73,-0.02,1,.55) backwards; */
+    animation-delay: .1s;
+  }
+  
+  @keyframes fly_in {
+    from {
+      transform: translateY(-200%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  
+  }
+
+  #piecharticon:hover{
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) { /* Adjustments for tablets and below */
+    .question {
+
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0px;
+      padding: 20px;
+    }
+    #questionWrapper {
+      margin: 20px;
+    }
+
+  .stat {
+    margin-bottom: 20px;
+    width: 40vw;
+    /* width: 100%;
+    height: 10vh;
+    padding: 1vw; */
+    /* flex: 1;
+    margin: 10px; Add margin between charts */
+  }
+  }
+
+  @media (max-width: 560px) { /* Adjustments for tablets and below */
+   
+  .stat {
+    margin-bottom: 20px;
+    width: 60vw;
+    /* width: 100%;
+    height: 10vh;
+    padding: 1vw; */
+    /* flex: 1;
+    margin: 10px; Add margin between charts */
+  }
+  }
+
+
+
+@media (max-width: 768px) {
+  .sort-select, .navigation-buttons button {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
