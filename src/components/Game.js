@@ -283,7 +283,7 @@ const handleChoice = async (questionId, choice) => {
               </button>
             </div>
             <div >
-              {toggleStats&& questionStats && renderPieChart()} 
+              {/* {toggleStats&& questionStats && renderPieChart()}  */}
             </div>
             <div className="navigation-buttons">
               {/* <button onClick={() => history('/stats')}>View All Stats</button> */}
