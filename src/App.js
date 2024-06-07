@@ -10,19 +10,24 @@ import initialQuestions from './data/initialQuestions.json';
 function App() {
 
   return (
-    <Router>
+
+    
       <div className="App">
         <header>
           
         </header>
         <main>
+          <h2>TERST</h2>
+        <Router>
+
           <Routes>
             <Route path="/" element={<Game questions={initialQuestions} />} />
             <Route path="/stats" element={<Statistics questions={initialQuestions} />} />
           </Routes>
+          </Router>
         </main>
       </div>
-    </Router>
+    
   );
 }
 
