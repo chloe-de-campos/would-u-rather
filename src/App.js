@@ -18,7 +18,6 @@ function App() {
         </header>
         <main>
         <Router>
-
           <Routes>
             <Route path="/" element={<Game questions={initialQuestions} />} />
             <Route path="/stats" element={<Statistics questions={initialQuestions} />} />
