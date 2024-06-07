@@ -17,7 +17,6 @@ function App() {
           
         </header>
         <main>
-          <h2>TERST</h2>
         <Router>
 
           <Routes>

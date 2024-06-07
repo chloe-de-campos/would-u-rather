@@ -33,9 +33,9 @@ const Game = () => {
     setQuestions(shuffledQuestions);
   }, []);
 
-  // useEffect(() => {
-  //   loadStats();
-  // }, [currentIndex,loadStats]); // Update stats when the index changes
+  useEffect(() => {
+    loadStats();
+  }, [currentIndex]); // Update stats when the index changes
 
   // const handleChoice = async (questionId, choice) => {
   //   const newResponse = {
