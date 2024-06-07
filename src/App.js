@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {  HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Game from './components/Game';
 import Statistics from './components/Statistics';
 import './App.css';
