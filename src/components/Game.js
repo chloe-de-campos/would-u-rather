@@ -29,11 +29,13 @@ const Game = () => {
 
 
   useEffect(() => {
+    console.log('shuffelquetions')
     const shuffledQuestions = [...initialQuestions].sort(() => Math.random() - 0.5);
     setQuestions(shuffledQuestions);
   }, []);
 
   useEffect(() => {
+    console.log('loadstatscalled')
     loadStats();
   }, [currentIndex]); // Update stats when the index changes
 
@@ -77,6 +79,7 @@ const Game = () => {
 // };
 
 const findcookie = (questionId) => {
+  console.log('findcookie')
   let allCookies = document.cookie;
   console.log('allCookies = document.cookie;', allCookies)
 
@@ -105,6 +108,7 @@ const findcookie = (questionId) => {
 }
 
 const handleChoice = async (questionId, choice) => {
+  console.log('handlechoice')
   // console.log('cookiestored', Cookies.get(`response-${questionId}`,  responseRef.key))
   const foundcookie = findcookie(questionId)
   if ((foundcookie !== null) && foundcookie.name == questionId && foundcookie.value != null) {
@@ -167,8 +171,10 @@ const handleChoice = async (questionId, choice) => {
   }
 
   const loadStats = async () => {
+    console.log('loadstats')
     const data = await getResponses();
     const questionId = questions[currentIndex]?.id;
+    console.log('gotresponses', data)
     if (questionId) {
       const questionResponses = data.filter(response => response.questionId === questionId);
       const optionAResponses = questionResponses.filter(response => response.choice === 'optionA').length;
