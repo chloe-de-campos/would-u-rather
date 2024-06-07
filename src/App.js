@@ -9,9 +9,7 @@ import initialQuestions from './data/initialQuestions.json';
 
 function App() {
 
-  return (
-
-    
+  return (    
       <div className="App">
         <header>
           
