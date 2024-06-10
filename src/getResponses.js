@@ -21,7 +21,6 @@ const getResponses = async () => {
   }
 };
 
-
 // const getResponse = async (responseId) => {
 //   try {
 //     const responseRef = ref(db, `responses/${responseId}`);
